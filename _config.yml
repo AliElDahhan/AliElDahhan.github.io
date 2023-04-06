@@ -81,7 +81,7 @@ analytics:
 # Site Author
 author:
   name             : "Your Sidebar Name"
-  avatar           : 46375910_2433371686689854_5571784618387963904_o.jpg
+  avatar           : "46375910_2433371686689854_5571784618387963904_o.jpg"
   bio              : "PhD. Candidate at University of South Florida"
   location         : "Location"
   employer         :
