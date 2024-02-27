@@ -8,8 +8,7 @@ def intro():
 
     st.markdown(
         """
-        Streamlit is an open-source app framework built specifically for
-        Machine Learning and Data Science projects.
+        test test
 
         **👈 Select a demo from the dropdown on the left** to see some examples
         of what Streamlit can do!
