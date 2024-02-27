@@ -1,9 +1,9 @@
 import streamlit as st
+import numpy as np
+import pandas as pd
 
-def show_page1():
-    st.title("Python Code for the Project")
+chart_data = pd.DataFrame(
+     np.random.randn(20, 3),
+     columns=['a', 'b', 'c'])
 
-    code = """
-    # Your Python code for the project goes here
-    """
-    st.code(code, language='python')
+st.line_chart(chart_data)
