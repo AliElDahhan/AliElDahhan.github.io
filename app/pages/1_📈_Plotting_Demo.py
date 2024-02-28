@@ -2,10 +2,11 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 
-filename = "rmseplt.csv"
-df = pd.read_csv(filename)
+DATE_COLUMN1 = 'Epochs'
+DATE_COLUMN2 = 'rmse_values_train	'
+DATA_URL = (https://github.com/AliElDahhan/AliElDahhan.github.io/blob/master/app/pages/rmseplt.csv)
 
 chart_data = pd.DataFrame(
-     df.iloc[:, 0], df.iloc[:, 1])
+     DATE_COLUMN1,DATE_COLUMN2)
 
 st.line_chart(chart_data)
