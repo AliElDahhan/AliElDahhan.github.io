@@ -444,3 +444,4 @@ np.arange(1, 21)
 
 #Load some data
 DATA_URL = ('https://github.com/AliElDahhan/AliElDahhan.github.io/blob/master/app/rmseplt.csv')
+col2 = DATA_URL["rmse_values_train"]
