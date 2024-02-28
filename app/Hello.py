@@ -439,9 +439,6 @@ print(y_valid)
 housing_predictions_valid.shape
 np.arange(1, 21)
 '''
-st.code(code, language='python')
-    st.write("# Welcome to Streamlit! 👋")
-    st.sidebar.success("Select a demo above.")
 
 
 def mapping_demo():
