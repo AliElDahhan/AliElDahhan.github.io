@@ -442,24 +442,4 @@ np.arange(1, 21)
 '''
 
 
-#Load some data
-DATA_URL = ('https://github.com/AliElDahhan/AliElDahhan.github.io/blob/master/app/rmseplt.csv')
-df = pd.read_csv('rmseplt.csv')
-
-import streamlit as st
-import Vaildation_vs_Actual.py
-import page2
-
-# Define the pages in your app
-pages = {
-    "Page 1":  RMSE_vs_Validation_and_Training_Sets,
-    "Page 2": Vaildation_vs_Actual,
-    "Page 3": Varying_alpha_and_r
-    
-}
-
-# Sidebar navigation
-selected_page = st.sidebar.radio("Select a page:", list(pages.keys()))
-page = pages[selected_page]
-page.app()
 
