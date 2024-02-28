@@ -441,8 +441,6 @@ housing_predictions_valid.shape
 np.arange(1, 21)
 '''
 
-pages/
-  About.py # This is a page
-  2_Page_two.py # This is another page
-  3_😎_three.py # So is this
 
+#Load some data
+DATA_URL = ('https://github.com/AliElDahhan/AliElDahhan.github.io/blob/master/app/rmseplt.csv')
