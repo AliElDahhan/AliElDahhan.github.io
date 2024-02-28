@@ -2,8 +2,10 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 
+filename = "rmseplt.csv"
+df = pd.read_csv(filename)
+
 chart_data = pd.DataFrame(
-     [0.1, 0.5, 1.0],
-     [0.1, 0.5, 0.9])
+     df.iloc[:, 0], df.iloc[:, 1])
 
 st.line_chart(chart_data)
