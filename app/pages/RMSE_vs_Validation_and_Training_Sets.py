@@ -2,11 +2,29 @@ import streamlit as st
 import pandas as pd
 
 # Hard-coded vectors
-epochs = list(range(1, 6))  # Example epochs [1, 2, 3, 4, 5]
-rmse_train = [7.94, 7.34, 7.19, 7.15, 7.12]  # Example RMSE values for training
-rmse_valid = [7.90, 7.33, 7.19, 7.16, 7.14]  # Example RMSE values for validation
+epochs = list(range(1, 11)) 
+rmse_train = [7.944234761966651,
+ 7.344119762294723,
+ 7.1997220161386215,
+ 7.151222034236081,
+ 7.121901498210893,
+ 7.099689608510607,
+ 7.0823707166259675,
+ 7.06882998027756,
+ 7.058211810170119,
+ 7.0498692020033005]  
+rmse_valid = [7.902376307293012,
+ 7.3341355141304625,
+ 7.192693356118868,
+ 7.1604562519827555,
+ 7.144970534447746,
+ 7.131752280250176,
+ 7.120448261838122,
+ 7.1113853292722355,
+ 7.10439502555068,
+ 7.099125991315503]  
 
-# Create a DataFrame
+
 data = {
     'Epochs': epochs,
     'RMSE Train': rmse_train,
