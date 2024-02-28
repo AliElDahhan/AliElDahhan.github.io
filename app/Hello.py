@@ -3,13 +3,13 @@ import streamlit as st
 def intro():
     import streamlit as st
     
-    st.code(import sys
+    st.code('''import sys
 
 assert sys.version_info >= (3, 7)
 from packaging import version
 import sklearn
 
-assert version.parse(sklearn.__version__) >= version.parse("1.0.1")
+assert version.parse(sklearn.__version__) >= version.parse("1.0.1")'''
 , language="python", line_numbers=False)
 
     
