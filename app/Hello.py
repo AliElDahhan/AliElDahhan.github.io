@@ -265,7 +265,8 @@ set_config(display='diagram')
 
 '''
 , language="python", line_numbers=False)
-st.write("Code - Elastic Net Part")
+
+st.write("")
 code = '''from sklearn.linear_model import ElasticNet
 from sklearn.pipeline import make_pipeline
 
