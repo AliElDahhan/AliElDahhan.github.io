@@ -1,12 +1,18 @@
-# page2.py
 import streamlit as st
 import pandas as pd
 
-def app():
-    st.title("Page 2")
-    # Load and display the data
-    df = pd.read_csv('rmseplt (1).csv')
-    st.write(df)  # Check if the data is displayed correctly
+# Hard-coded vectors
+epochs = list(range(1, 6))  # Example epochs [1, 2, 3, 4, 5]
+rmse_train = [7.94, 7.34, 7.19, 7.15, 7.12]  # Example RMSE values for training
+rmse_valid = [7.90, 7.33, 7.19, 7.16, 7.14]  # Example RMSE values for validation
 
-    # Plot the RMSE values
-    st.line_chart(df.set_index('Epochs')[['rmse_values_train', 'rmse_values_valid']])
+# Create a DataFrame
+data = {
+    'Epochs': epochs,
+    'RMSE Train': rmse_train,
+    'RMSE Valid': rmse_valid
+}
+df = pd.DataFrame(data)
+
+# Plot the RMSE values
+st.line_chart(df.set_index('Epochs'))
