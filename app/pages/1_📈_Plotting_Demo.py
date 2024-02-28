@@ -8,6 +8,6 @@ DATE_COLUMN2 = 'rmse_values_train	'
 
 
 chart_data = pd.DataFrame(
-     df.iloc[:, 0],df.iloc[:, 1])
+     df.iloc[:, 1],df.iloc[:, 2])
 
 st.line_chart(chart_data)
