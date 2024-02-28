@@ -454,10 +454,7 @@ def mapping_demo():
 
 @st.cache_data
 def from_data_file(filename):
-    url = (
-            "http://raw.githubusercontent.com/streamlit/"
-            "example-data/master/code/v1/%s" % filename
-        )
+    url = ("https://github.com/AliElDahhan/AliElDahhan.github.io/blob/master/app/pages % rmseplt.csv)
         return pd.read_json(url)
 
 def plotting_demo():
