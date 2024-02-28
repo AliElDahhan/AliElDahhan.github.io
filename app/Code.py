@@ -447,20 +447,14 @@ def mapping_demo():
     import pandas as pd
     import pydeck as pdk
 
- '   ''from urllib.error import URLError''
+ ' 
 
     
-    st.write(
-        """
-        This demo shows how to use
-[`st.pydeck_chart`](https://docs.streamlit.io/library/api-reference/charts/st.pydeck_chart)
-to display geospatial data.
-"""
-    )
 
-    @st.cache_data
-    def from_data_file(filename):
-        url = (
+
+@st.cache_data
+def from_data_file(filename):
+     url = (
             "http://raw.githubusercontent.com/streamlit/"
             "example-data/master/code/v1/%s" % filename
         )
