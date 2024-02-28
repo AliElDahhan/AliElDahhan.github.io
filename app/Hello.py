@@ -4,7 +4,7 @@ def intro():
     import streamlit as st
 
 st.write("Code")
-    st.code('''import sys
+st.code('''import sys
 
 assert sys.version_info >= (3, 7)
 from packaging import version
