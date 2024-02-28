@@ -445,3 +445,19 @@ np.arange(1, 21)
 #Load some data
 DATA_URL = ('https://github.com/AliElDahhan/AliElDahhan.github.io/blob/master/app/rmseplt.csv')
 df = pd.read_csv('rmseplt.csv')
+
+import streamlit as st
+import Vaildation_vs_Actual.py
+import page2
+
+# Define the pages in your app
+pages = {
+    "Page 1": page1,
+    "Page 2": page2
+}
+
+# Sidebar navigation
+selected_page = st.sidebar.radio("Select a page:", list(pages.keys()))
+page = pages[selected_page]
+page.app()
+
