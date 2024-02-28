@@ -1,6 +1,8 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
+import plotly.express as px
+
 
 df = pd.read_csv("./app/pages/rmseplt.csv")
 DATE_COLUMN1 = 'Epochs'
