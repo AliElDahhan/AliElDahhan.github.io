@@ -452,8 +452,8 @@ import page2
 
 # Define the pages in your app
 pages = {
-    "Page 1": page1,
-    "Page 2": page2
+    "Page 1": Vaildation_vs_Actual.py,
+    "Page 2": Vaildation_vs_Actual.py
 }
 
 # Sidebar navigation
