@@ -5,9 +5,6 @@ import plotly.express as px
 
 
 df = pd.read_csv("./app/pages/rmseplt.csv")
-DATE_COLUMN1 = 'Epochs'
-DATE_COLUMN2 = 'rmse_values_train	'
+chart_data = pd.DataFrame(df["Epochs"], df["rmse_values_train"])
 
-fig = px.line(df, x="Epochs", y="rmse_values_train", title=inform)
-
-st.plotly_chart(fig, use_container_width=True)
+st.line_chart(chart_data)
